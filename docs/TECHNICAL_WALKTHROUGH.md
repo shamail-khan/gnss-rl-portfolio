@@ -27,4 +27,4 @@ The meta-learning implementation separates inner adaptation from query rollouts 
 
 The artifacts document formulation of a measurement-backed navigation task, integration of deep RL agents with custom environments, recurrent observation processing, a first-order adaptation experiment, and analysis of failure under domain shift. The task-specific investigation and integration build on established methods and credited upstream code.
 
-Research code is preserved for inspection. Publication preparation did not fix algorithmic or runtime issues, recreate missing evaluation scripts, or invent experiments.
+The repository preserves the research implementation for inspection. Runtime validation and result reproduction require the missing data, modules, and evaluation scripts described in the reproducibility notes.

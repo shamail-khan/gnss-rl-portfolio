@@ -4,7 +4,7 @@
 
 Research into active GNSS interference-source localization: an agent uses RF observations to choose where to move, learns from sequential measurements, and attempts to adapt when the environment changes.
 
-**Research period:** July 2025 - January 2026. **Submitted:** January 28, 2026. **Public portfolio prepared:** October 26, 2026. **Published:** October 27, 2026.
+**Research period:** July 2025 - January 2026. **Thesis submitted:** January 28, 2026.
 
 ## Project at a glance
 
@@ -21,13 +21,13 @@ Research into active GNSS interference-source localization: an agent uses RF obs
 - [Technical walkthrough](docs/TECHNICAL_WALKTHROUGH.md): environments, learning methods, and source entry points.
 - [Reported results](docs/RESULTS.md): selected findings, including low success rates and transfer limitations.
 - [Reproducibility](docs/REPRODUCIBILITY.md): missing materials and checks actually performed.
-- [Publication notes](docs/PUBLICATION_NOTES.md): provenance and public-release exclusions.
+- [Repository scope](docs/PUBLICATION_NOTES.md): included materials, project history, and attribution.
 
 ## Approach
 
 RF measurement at agent position -> IQ or spectrogram observation -> feedforward or recurrent policy -> navigation action -> environment transition and reward -> next observation.
 
-The archived code retrieves observations from measurement-backed navigation environments. This is an offline research setup, not a live GNSS receiver integration or a deployed monitoring system.
+The code retrieves RF observations from measurement-backed navigation environments for training and evaluation.
 
 ![Structured navigation environment](assets/environment-b.png)
 
@@ -53,12 +53,12 @@ The thesis reports modest benefits from temporal memory and environment-dependen
 
 ## Running and validation
 
-**This is a code-and-results portfolio, not a turnkey training package.** RF datasets, the dataset loader, some original package modules, and evaluation scripts are not included. Imports require restoration and authorized data before training can run. The archived Linux environment export has not been installed or validated for this release.
+The repository includes research source and reported thesis results. Running the training scripts requires authorized RF data, the original dataset loader, missing package modules, and restored imports. The archived Linux environment specification has not been installed or validated for this release.
 
 All 14 published Python files passed syntax parsing during preparation. This does not establish runtime correctness: no training, inference, or result reproduction was performed. Read the [reproducibility notes](docs/REPRODUCIBILITY.md) before attempting execution.
 
 ## History and attribution
 
-This public repository is a curated snapshot of a completed thesis submission, prepared on October 26, 2026. Its commits record publication and subsequent maintenance, not the original research timeline. A separate archive used disclosed, retrospectively reconstructed June-August 2026 organizational dates; those commits are not imported here and are not evidence of original development activity.
+This repository collects source code and selected results from the completed thesis. It was prepared on October 26, 2026 and published on October 27, 2026. The commit history records the public release and subsequent updates. The original research dates are listed above.
 
-Agent implementations include adaptations of CleanRL patterns. This project does not claim to originate DQN, PPO, LSTM, MAML, or their upstream implementations. See [third-party notices](THIRD_PARTY_NOTICES.md). No new blanket license is assigned to the thesis author's material; upstream licenses continue to apply to upstream portions.
+Agent implementations adapt established RL methods and CleanRL patterns. Attribution and applicable upstream licenses are documented in the [third-party notices](THIRD_PARTY_NOTICES.md). No additional license is granted for the thesis author's material.

@@ -21,9 +21,9 @@
 
 ## Environment
 
-environment.yml is an archived Linux Conda export. The private submission misleadingly named the same Conda YAML src/requirements.txt; only the accurately named copy is included. Its machine-specific prefix had already been removed in archive preparation.
+`environment.yml` is an archived Linux Conda export with the original machine-specific prefix removed.
 
-The export contains Linux build pins and old dependency versions. It was not installed or validated for this release. Do not pass it to pip install -r or assume Windows compatibility.
+The export contains Linux build pins and older dependency versions. Installation has not been validated for this release. It uses Conda YAML format. Windows compatibility requires a separate review.
 
 ## Restoration needed before training
 

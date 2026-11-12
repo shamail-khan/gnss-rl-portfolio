@@ -1,21 +1,24 @@
-# Public publication notes
+# Repository scope and history
 
-Prepared October 26, 2026 from a completed thesis submission; published October 27, 2026. The thesis records a formal period of July 2025 - January 2026 and submission on January 28, 2026.
+This repository contains selected materials from a master's thesis submitted on January 28, 2026, following a research period of July 2025 to January 2026. The public repository was prepared on October 26, 2026 and published on October 27, 2026.
 
-## History
+## Included materials
 
-This portfolio begins a new publication history using actual preparation and publication dates. It does not import the separate archive's reconstructed June-August 2026 milestone commits. Those labels were explicitly retrospective organization, not recovered development dates.
+- Fourteen Python source files.
+- The archived Linux Conda environment specification.
+- Four figures rendered from thesis plots.
+- Documentation of methods, reported results, and reproducibility.
 
-## Selection and privacy
+## Materials required separately
 
-Included: 14 Python source files, the archived environment specification, four rendered research figures, and explanatory documentation.
+The RF data, contributed dataset loader, original evaluation scripts, checkpoints, and raw logs are unavailable in this repository. Running the training code requires authorized data and restoration of the missing dependencies and package structure. The [reproducibility notes](REPRODUCIBILITY.md) describe these requirements.
 
-Excluded: the complete thesis PDF and LaTeX sources, institutional templates and logo, raw logs, trained checkpoints, RF data, the contributed dataset utility without a supplied redistribution license, and an illustrative training skeleton whose progress messages did not demonstrate a working optimization loop.
+The complete thesis, institutional templates, and personal pages are excluded from the public release.
 
-Excluding the full thesis avoids publishing personal details and possible handwritten material. Rendered figures carry no original PDF metadata. Known machine paths and private contact details were not found in the selected source. No private Git history is copied.
+## Source and attribution
 
-## Changes and rights
+The research source and environment specification were copied from the thesis archive without algorithmic changes. The figures were rendered to PNG from thesis plots.
 
-Published research source and environment specification are copied without algorithmic changes. Figures are rendered to PNG. New documentation explains methods, results, scope, and limitations.
+The public commit history records release and maintenance activity. It is separate from the original development history and from retrospectively organized archive milestones.
 
-Upstream references are retained and the CleanRL MIT notice is supplied separately. No new global license is assigned. This practical review does not prove ownership or establish all third-party rights. The contributed dataset utility and institutional assets are not distributed.
+CleanRL references and the upstream MIT notice are retained. Upstream licenses apply to the corresponding code. No additional license is granted for the thesis author's material. The contributed dataset utility is withheld pending redistribution permission.
